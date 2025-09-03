@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio5"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-02 08:51:53 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAyOyIwODozNjo0NCAiOzI3MzM="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAyOyIwODo1MTo1MyAiOzI7MjgzOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C, delta, X1, X2" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o coeficiente A: &quot;" newline="True"/>
+            <input variable="A"/>
+            <output expression="&quot;Digite o coeficiente B: &quot;" newline="True"/>
+            <input variable="B"/>
+            <output expression="&quot;Digite o coeficiente C: &quot;" newline="True"/>
+            <input variable="C"/>
+            <assign variable="delta" expression="((B^2)-4*A*C)"/>
+            <assign variable="X1" expression="(-B+(delta^0.5))/(2*A)"/>
+            <assign variable="X2" expression="(-B-(delta^0.5))/(2*A)"/>
+            <output expression="&quot;As ra&#237;zes reais s&#227;o: &quot;&amp;X1&amp;&quot;;&quot;&amp;X2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

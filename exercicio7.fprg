@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio7"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-02 08:58:50 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAyOyIwODo1NTo1MyAiOzI3MzQ="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAyOyIwODo1ODo1MCAiOzE7Mjg0Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="comprimento, largura, altura, volume" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o valor do comprimento do paralelep&#237;pedo: &quot;" newline="True"/>
+            <input variable="comprimento"/>
+            <output expression="&quot;Digite o valor da altura do paralelep&#237;pedo: &quot;" newline="True"/>
+            <input variable="altura"/>
+            <output expression="&quot;Digite o valor da largura do paralelep&#237;pedo: &quot;" newline="True"/>
+            <input variable="largura"/>
+            <assign variable="volume" expression="(comprimento*largura*altura)"/>
+            <output expression="&quot;O volume do paralelep&#237;pedo &#233;: &quot;&amp;volume" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

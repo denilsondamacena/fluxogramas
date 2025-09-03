@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio21"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-03 09:37:56 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAzOyIwOTozMDowMCAiOzI3MjE="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAzOyIwOTozNzo1NiAiOzE7Mjg0Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, n4, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite a nota 1: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Digite a nota 2: &quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;Digite a nota 3: &quot;" newline="True"/>
+            <input variable="n3"/>
+            <output expression="&quot;Digite a nota 4: &quot;" newline="True"/>
+            <input variable="n4"/>
+            <assign variable="media" expression="((n1+n2+n3+n4)/4)"/>
+            <if expression="media&gt;=6.0">
+                <then>
+                    <output expression="&quot;Aprovado&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="media&gt;=3.0">
+                        <then>
+                            <output expression="&quot;Exame&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Retido&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

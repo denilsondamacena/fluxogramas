@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio2"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-02 08:45:51 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAyOyIwODozMDoxNSAiOzI3MjU="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAyOyIwODo0NTo1MSAiOzI7Mjg0MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salario, NovoSalario" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o sal&#225;rio do funcion&#225;rio: &quot;" newline="True"/>
+            <input variable="salario"/>
+            <assign variable="NovoSalario" expression="(salario*1.15)"/>
+            <output expression="&quot;O sal&#225;rio com reajuste de 15% fica: &quot;&amp;NovoSalario" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

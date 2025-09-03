@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio14"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-02 09:19:31 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAyOyIwOToxNzoxMiAiOzI3Mjg="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAyOyIwOToxOTozMSAiOzE7MjgzOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angulo1, angulo2, angulo3" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o valor do primeiro &#226;ngulo: &quot;" newline="True"/>
+            <input variable="angulo1"/>
+            <output expression="&quot;Digite o valor do segundo &#226;ngulo: &quot;" newline="True"/>
+            <input variable="angulo2"/>
+            <assign variable="angulo3" expression="(180-(angulo1+angulo2))"/>
+            <output expression="&quot;O terceiro &#226;ngulo &#233; de: &quot;&amp;angulo3" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

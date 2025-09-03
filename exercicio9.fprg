@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio9"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-02 08:35:37 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAyOyIwODozMDo0NyAiOzI3MzA="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAyOyIwODozNTozNyAiOzE7Mjg0Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, soma" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro n&#250;mero para calcular o quadrado: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Digite o segundo n&#250;mero para calcular o quadrado: &quot;" newline="True"/>
+            <input variable="n2"/>
+            <assign variable="n1" expression="n1*n1"/>
+            <assign variable="n2" expression="n2*n2"/>
+            <assign variable="soma" expression="n1+n2"/>
+            <output expression="&quot;A soma dos quadrados &#233;: &quot;&amp;n1&amp;&quot;+&quot;&amp;n2&amp;&quot;=&quot;&amp;soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

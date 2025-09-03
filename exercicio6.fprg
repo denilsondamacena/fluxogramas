@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio6"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-02 08:55:45 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAyOyIwODo1MTo1OCAiOzI3MzU="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAyOyIwODo1NTo0NSAiOzE7Mjg0Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y, temp" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o valor de X: &quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;Digite o valor de Y: &quot;" newline="True"/>
+            <input variable="y"/>
+            <assign variable="temp" expression="x"/>
+            <assign variable="x" expression="y"/>
+            <assign variable="y" expression="temp"/>
+            <output expression="&quot;Agora X=&quot;&amp;x&amp; &quot; e Y=&quot;&amp;y" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

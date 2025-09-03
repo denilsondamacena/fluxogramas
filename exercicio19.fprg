@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio19"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-03 09:25:36 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAzOyIwOToyMjowMyAiOzI3MjU="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAzOyIwOToyNTozNiAiOzE7Mjg0Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor1, valor2" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro n&#250;mero real: &quot;" newline="True"/>
+            <input variable="valor1"/>
+            <output expression="&quot;Digite o segundo n&#250;mero real: &quot;" newline="True"/>
+            <input variable="valor2"/>
+            <if expression="valor1&gt;valor2">
+                <then>
+                    <output expression="&quot;Este &#233; o maior n&#250;mero: &quot;&amp;valor1" newline="True"/>
+                </then>
+                <else>
+                    <if expression="valor2==valor1">
+                        <then>
+                            <output expression="&quot;Os dois n&#250;meros t&#234;m o mesmo valor.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Este &#233; o maior n&#250;mero: &quot;&amp;valor2" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio12"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-02 09:07:15 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAyOyIwODo1Nzo0NyAiOzI3Mzk="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAyOyIwOTowNzoxNSAiOzE7MjgzOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="AnoNasc, AnoAtual, idade, IdadeFut" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o ano do seu nascimento: &quot;" newline="True"/>
+            <input variable="AnoNasc"/>
+            <output expression="&quot;Digite o ano atual: &quot;" newline="True"/>
+            <input variable="AnoAtual"/>
+            <assign variable="idade" expression="(AnoAtual-AnoNasc)"/>
+            <assign variable="IdadeFut" expression="(idade+17)"/>
+            <output expression="&quot;Voc&#234; tem &quot;&amp;idade&amp;&quot; anos e ap&#243;s 17 anos, voc&#234; ter&#225; &quot;&amp;IdadeFut&amp;&quot; anos&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

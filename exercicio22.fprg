@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio22"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-03 09:41:35 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAzOyIwOTozODowNCAiOzI3MzM="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAzOyIwOTo0MTozNSAiOzE7MjgzOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor1, valor2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro n&#250;mero: &quot;" newline="True"/>
+            <input variable="valor1"/>
+            <output expression="&quot;Digite o segundo n&#250;mero: &quot;" newline="True"/>
+            <input variable="valor2"/>
+            <if expression="valor1==valor2">
+                <then>
+                    <output expression="&quot;Os n&#250;meros s&#227;o iguais.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="valor1&lt;valor2">
+                        <then>
+                            <output expression="&quot;Ordem crescente: &quot;&amp;valor1&amp;&quot;, &quot;&amp;valor2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Ordem crescente: &quot;&amp;valor2&amp;&quot;, &quot;&amp;valor1" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

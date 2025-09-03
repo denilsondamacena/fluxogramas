@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio18"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-03 09:21:58 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAzOyIwOToxODo0NCAiOzI3MzU="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAzOyIwOToyMTo1OCAiOzE7Mjg0Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor1, valor2, dif" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro n&#250;mero: &quot;" newline="True"/>
+            <input variable="valor1"/>
+            <output expression="&quot;Digite o segundo n&#250;mero: &quot;" newline="True"/>
+            <input variable="valor2"/>
+            <if expression="valor1&gt;valor2">
+                <then>
+                    <assign variable="dif" expression="(valor1-valor2)"/>
+                </then>
+                <else>
+                    <assign variable="dif" expression="(valor2-valor1)"/>
+                </else>
+            </if>
+            <output expression="&quot;A diferen&#231;a do maior n&#250;mero para o menor &#233; de: &quot;&amp;dif" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

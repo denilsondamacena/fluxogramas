@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio4"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-02 08:50:13 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAyOyIwODozNTowNiAiOzI3MzA="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAyOyIwODo1MDoxMyAiOzI7MjgzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="celsius, fahrenheit" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite a temperatura em &#186;C: &quot;" newline="True"/>
+            <input variable="celsius"/>
+            <assign variable="fahrenheit" expression="((9*celsius+160)/5)"/>
+            <output expression="&quot;A temperatura de &quot; &amp;celsius&amp;&quot;&#186;C convertida para fahrenheit &#233; de: &quot; &amp;fahrenheit&amp;&quot;&#186;F&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

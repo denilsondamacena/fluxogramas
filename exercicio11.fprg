@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio11"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-02 08:57:34 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAyOyIwODozOToyMiAiOzI3MzI="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAyOyIwODo1NzozNCAiOzE7Mjg0Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="raio, comprimento" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o valor de raio: &quot;" newline="True"/>
+            <input variable="raio"/>
+            <assign variable="comprimento" expression="((2*3.14)*raio)"/>
+            <output expression="&quot;O per&#237;metro do c&#237;curlo &#233;: &quot;&amp;comprimento" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

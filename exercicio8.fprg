@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio8"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-02 08:30:45 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAyOyIwODoyNToyNSAiOzI3MzA="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAyOyIwODozMDo0NSAiOzE7MjgzNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="deposito, rendimento, ValorFinal" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o valor do dep&#243;sito: &quot;" newline="True"/>
+            <input variable="deposito"/>
+            <assign variable="rendimento" expression="(deposito *0.013)"/>
+            <assign variable="ValorFinal" expression="(deposito+rendimento)"/>
+            <output expression="&quot;O saldo ap&#243;s um m&#234;s &#233; de: &quot;&amp;ValorFinal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

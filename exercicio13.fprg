@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio13"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-02 09:17:05 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAyOyIwOTowNzoyNCAiOzI3MzA="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAyOyIwOToxNzowNSAiOzE7MjgzOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="alimentoKG, alimentoG, dias" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite a quantidade de alimentos em quilogramas: &quot;" newline="True"/>
+            <input variable="alimentoKG"/>
+            <assign variable="alimentoG" expression="(alimentoKG*1000)"/>
+            <assign variable="dias" expression="(alimentoG/50)"/>
+            <output expression="&quot;A quantidade de alimento mencionada, &quot;&amp;alimentoKG&amp;&quot;kg, durar&#225; &quot;&amp;dias&amp;&quot; dias.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

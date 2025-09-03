@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio16"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-03 09:13:09 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAzOyIwOTowNjoxNSAiOzI3MzA="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAzOyIwOToxMzowOSAiOzE7MjgzOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="horasTrab, valorHora, percDesc, numDep, salarioLiq, salarioBru, desconto" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite a quantidade de horas trabalhadas: &quot;" newline="True"/>
+            <input variable="horasTrab"/>
+            <output expression="&quot;Digite o valor por hora trabalhada: &quot;" newline="True"/>
+            <input variable="valorHora"/>
+            <output expression="&quot;Digite o percentual de desconto: &quot;" newline="True"/>
+            <input variable="percDesc"/>
+            <output expression="&quot;Digite a quantidade de dependentes: &quot;" newline="True"/>
+            <input variable="numDep"/>
+            <assign variable="salarioBru" expression="(horasTrab*valorHora)"/>
+            <assign variable="desconto" expression="(salarioBru*(percDesc/100))"/>
+            <assign variable="salarioLiq" expression="(salarioBru-desconto)"/>
+            <assign variable="salarioLiq" expression="(salarioLiq+(numDep*100))"/>
+            <output expression="&quot;Sal&#225;rio a receber: R$&quot;&amp;salarioLiq" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
