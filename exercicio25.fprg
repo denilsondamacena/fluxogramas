@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio25"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-03 09:27:18 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAzOyIwOToyMTowMyAiOzI3MjQ="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAzOyIwOToyNzoxOCAiOzE7Mjg0NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="h1, m1, h2, m2, inicio, fim, duracao, horas, minutos" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite a hora (HH) do &#237;nicio do jogo: &quot;" newline="True"/>
+            <input variable="h1"/>
+            <output expression="&quot;Digite os minutos (MM) do &#237;nicio do jogo: &quot;" newline="True"/>
+            <input variable="m1"/>
+            <output expression="&quot;Digite a hora (HH) do fim do jogo: &quot;" newline="True"/>
+            <input variable="h2"/>
+            <output expression="&quot;Digite os minutos (MM) do fim do jogo: &quot;" newline="True"/>
+            <input variable="m2"/>
+            <assign variable="inicio" expression="(h1*60+m1)"/>
+            <assign variable="fim" expression="(h2*60+m2)"/>
+            <if expression="fim&lt;inicio">
+                <then>
+                    <assign variable="fim" expression="(fim+24*60)"/>
+                </then>
+                <else>
+                    <assign variable="duracao" expression="(fim-inicio)"/>
+                    <assign variable="horas" expression="(duracao/60)"/>
+                    <assign variable="minutos" expression="(duracao%60)"/>
+                </else>
+            </if>
+            <output expression="&quot;O jogo durou &quot;&amp;horas&amp;&quot;:&quot;&amp;minutos&amp;&quot; minutos.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

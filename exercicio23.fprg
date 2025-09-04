@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio23"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-03 09:17:15 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAzOyIwODo1NDo1NiAiOzI3Mzc="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTAzOyIwOToxNzoxNSAiOzE7Mjg0MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor1, valor2, valor3, valor4" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro n&#250;mero: &quot;" newline="True"/>
+            <input variable="valor1"/>
+            <output expression="&quot;Digite o segundo n&#250;mero: &quot;" newline="True"/>
+            <input variable="valor2"/>
+            <while expression="valor2&lt;valor1">
+                <output expression="&quot;Digite um n&#250;mero maior!&quot;" newline="True"/>
+                <input variable="valor2"/>
+            </while>
+            <output expression="&quot;Digite o terceiro n&#250;mero: &quot;" newline="True"/>
+            <input variable="valor3"/>
+            <while expression="valor3&lt;valor2">
+                <output expression="&quot;Digite um n&#250;mero maior!&quot;" newline="True"/>
+                <input variable="valor3"/>
+            </while>
+            <output expression="&quot;Digite o quarto n&#250;mero: &quot;" newline="True"/>
+            <input variable="valor4"/>
+            <if expression="valor4&lt;=valor1">
+                <then>
+                    <output expression="&quot;Ordem crescente: &quot;&amp;valor4&amp;&quot;,&quot;&amp;valor1&amp;&quot;,&quot;&amp;valor2&amp;&quot;,&quot;&amp;valor3" newline="True"/>
+                </then>
+                <else>
+                    <if expression="valor4&lt;=valor2">
+                        <then>
+                            <output expression="&quot;Ordem crescente: &quot;&amp;valor1&amp;&quot;,&quot;&amp;valor4&amp;&quot;,&quot;&amp;valor2&amp;&quot;,&quot;&amp;valor3" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="valor4&lt;=valor3">
+                                <then>
+                                    <output expression="&quot;Ordem crescente: &quot;&amp;valor1&amp;&quot;,&quot;&amp;valor2&amp;&quot;,&quot;&amp;valor4&amp;&quot;,&quot;&amp;valor3" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Ordem crescente: &quot;&amp;valor1&amp;&quot;,&quot;&amp;valor2&amp;&quot;,&quot;&amp;valor3&amp;&quot;,&quot;&amp;valor4" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
