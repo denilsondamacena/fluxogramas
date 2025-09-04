@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio28"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-04 09:49:05 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTA0OyIwOTozMDowNiAiOzI3Mjg="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTA0OyIwOTo0OTowNSAiOzE7Mjg0NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="PrecoAtual, media, PrecoNovo" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o pre&#231;o atual do produto: &quot;" newline="True"/>
+            <input variable="PrecoAtual"/>
+            <output expression="&quot;Digite a m&#233;dia de venda mensal deste produto: &quot;" newline="True"/>
+            <input variable="media"/>
+            <if expression="media &lt;500 AND PrecoAtual &lt;30">
+                <then>
+                    <assign variable="PrecoNovo" expression="(PrecoAtual*1.10)"/>
+                    <output expression="&quot;O novo pre&#231;o do produto com acr&#233;scimo de 10% &#233; de: R$&quot;&amp;PrecoNovo" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(media &gt;500 AND media &lt;1000) AND (PrecoAtual &gt;30 AND PrecoAtual&lt;80)">
+                        <then>
+                            <assign variable="PrecoNovo" expression="(PrecoAtual*1.15)"/>
+                            <output expression="&quot;O novo pre&#231;o do produto com acr&#233;scimo de 15% &#233; de: R$&quot;&amp;PrecoNovo" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="media &gt;=1000 AND PrecoAtual &gt;=80">
+                                <then>
+                                    <assign variable="PrecoNovo" expression="(PrecoAtual*0.95)"/>
+                                    <output expression="&quot;O novo pre&#231;o do produto com redu&#231;&#227;o de 0,5% &#233; de: R$&quot;&amp;PrecoNovo" newline="True"/>
+                                </then>
+                                <else>
+                                    <assign variable="PrecoNovo" expression="PrecoAtual"/>
+                                    <output expression="&quot;O valor n&#227;o deve ser alterado.&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

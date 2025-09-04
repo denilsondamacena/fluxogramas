@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio27"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-04 09:29:59 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTA0OyIwOToyMTo1NyAiOzI3MzQ="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTA0OyIwOToyOTo1OSAiOzE7Mjg1Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="voltas, extensao, TempoMin, DistanciaTotal, DistanciaKM, TempoHoras, velocidade" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o n&#250;mero de voltas: &quot;" newline="True"/>
+            <input variable="voltas"/>
+            <output expression="&quot;Digite a extens&#227;o do circuito (em metros): &quot;" newline="True"/>
+            <input variable="extensao"/>
+            <output expression="&quot;Digite o tempo de dura&#231;&#227;o (em minutos): &quot;" newline="True"/>
+            <input variable="TempoMin"/>
+            <assign variable="DistanciaTotal" expression="(voltas*extensao)"/>
+            <assign variable="DistanciaKM" expression="(DistanciaTotal/1000)"/>
+            <assign variable="TempoHoras" expression="(TempoMin/60)"/>
+            <assign variable="velocidade" expression="(DistanciaKM/TempoHoras)"/>
+            <output expression="&quot;A velocidade m&#233;dia &#233; de &quot;&amp;velocidade&amp;&quot;km/H.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
