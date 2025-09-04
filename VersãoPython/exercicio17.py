@@ -1,0 +1,5 @@
+tempo_p=int(input("Digite o tempo de percuso: "))
+vel_media=int(input("Digite a velocidade média: "))
+distancia=(tempo_p*vel_media)
+litros_gastos=(distancia/12)
+print("A viagem precisará de {}l de combustível.".format(litros_gastos))

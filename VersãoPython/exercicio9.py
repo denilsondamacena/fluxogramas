@@ -1,0 +1,6 @@
+n1=int(input("Digite o valor do primeiro número: "))
+n2=int(input("Digite o valor do segundo número: "))
+n1=(n1*n1)
+n2=(n2*n2)
+soma=(n1+n2)
+print("A soma dos quadrados de N1 e N2 são: {}".format(soma))

@@ -1,0 +1,8 @@
+voltas=int(input("Digite o número de voltas: "))
+extensao=int(input("Digite o tamanho do circuito (em metros): "))
+tempo_duracao=int(input("Digite o tempo de duração (em minutos): "))
+distanciatotal=(voltas*extensao)
+distanciakm=(distanciatotal/1000)
+tempohoras=(tempo_duracao/60)
+velocidade=(distanciakm/tempohoras)
+print("A velocidade média é {0:.2f}km/H".format(velocidade))
