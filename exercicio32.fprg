@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio32"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-06 10:57:11 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTA2OyIxMDo0MzoxMiAiOzI3MjM="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTA2OyIxMDo1NzoxMSAiOzE7MjgzNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, f, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um n&#250;mero inteiro: &quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="f" expression="1"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="f" expression="f*i"/>
+            </for>
+            <output expression="&quot;Seu fatorial &#233;: &quot;&amp;f" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio33"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-06 11:14:41 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTA2OyIxMDo1NzoxMyAiOzI3Mjk="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTA2OyIxMToxNDo0MSAiOzE7MjgzMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <declare name="s" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite um n&#250;mero: &quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="s" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="s" expression="s+1/i"/>
+            </for>
+            <output expression="&quot;O resultado &#233;: &quot;&amp;s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

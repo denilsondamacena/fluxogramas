@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio36"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-06 01:31:44 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTA2OyIxMjo1NDo0MSAiOzI3Mjk="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTA2OyIwMTozMTo0NCAiOzE7MjgzMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, r, x, fat" type="Integer" array="False" size=""/>
+            <declare name="soma" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite um n&#250;mero inteiro: &quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="soma" expression="1"/>
+            <for variable="r" start="1" end="n" direction="inc" step="1">
+                <assign variable="fat" expression="1"/>
+                <if expression="r==0">
+                    <then>
+                        <assign variable="fat" expression="1"/>
+                    </then>
+                    <else>
+                        <for variable="x" start="1" end="r" direction="inc" step="1">
+                            <assign variable="fat" expression="fat*x"/>
+                        </for>
+                    </else>
+                </if>
+                <assign variable="soma" expression="(soma+(1/fat))"/>
+            </for>
+            <output expression="&quot;O resultado &#233;: &quot;&amp;soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

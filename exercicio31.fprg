@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio31"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-06 10:43:08 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTA2OyIxMDozODoyOSAiOzI3MzU="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTA2OyIxMDo0MzowOCAiOzE7MjgzNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, quad" type="Integer" array="False" size=""/>
+            <for variable="num" start="10" end="150" direction="inc" step="1">
+                <assign variable="quad" expression="num^2"/>
+                <output expression="quad" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

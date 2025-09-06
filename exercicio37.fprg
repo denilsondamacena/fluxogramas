@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio37"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-06 01:53:20 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTA2OyIwMTozMTo0NiAiOzI3Mjc="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTA2OyIwMTo1MzoyMCAiOzE7MjgzMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, F" type="Integer" array="False" size=""/>
+            <assign variable="n2" expression="1"/>
+            <output expression="&quot;Digite um n&#250;mero inteiro para calcular a sequ&#234;ncia de Fibonacci: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="n1" newline="True"/>
+            <for variable="F" start="1" end="7" direction="inc" step="1">
+                <assign variable="n3" expression="n1+n2"/>
+                <output expression="n3" newline="True"/>
+                <assign variable="n1" expression="n2+n3"/>
+                <output expression="n1" newline="True"/>
+                <assign variable="n2" expression="n1+n3"/>
+                <output expression="n2" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

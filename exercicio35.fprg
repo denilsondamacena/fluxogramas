@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio35"/>
+        <attribute name="authors" value="denil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-06 12:54:39 "/>
+        <attribute name="created" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTA2OyIxMjoyODoyNiAiOzI3MzM="/>
+        <attribute name="edited" value="ZGVuaWw7REVOSUxTT05fTk9URTsyMDI1LTA5LTA2OyIxMjo1NDozOSAiOzE7Mjg0NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, maior, menor, soma, r" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro n&#250;mero: &quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Digite o segundo n&#250;mero: &quot;" newline="True"/>
+            <input variable="num2"/>
+            <if expression="num1&gt;num2">
+                <then>
+                    <assign variable="maior" expression="num1"/>
+                    <assign variable="menor" expression="num2"/>
+                </then>
+                <else>
+                    <assign variable="maior" expression="num2"/>
+                    <assign variable="menor" expression="num1"/>
+                </else>
+            </if>
+            <assign variable="soma" expression="0"/>
+            <for variable="r" start="(menor+1)" end="(maior-1)" direction="inc" step="1">
+                <if expression="r%2!=0">
+                    <then>
+                        <assign variable="soma" expression="soma+r"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;A soma dos n&#250;meros &#237;mpares entre &quot;&amp;menor&amp;&quot; e &quot;&amp;maior&amp;&quot; &#233; &quot;&amp;soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
